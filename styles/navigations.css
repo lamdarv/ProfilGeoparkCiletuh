@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sections {
+  height: 100%;
+  transition: margin 0.5s;
+  will-change: margin;
+}
+
+.mainpage {
+  margin-top: 0;
+}
+
+.section {
+  height: 100vh;
+  transition: all 1s;
+  overflow: hidden;
+  /* z-index: -2; */
+  /* top: 0; */
+}
+
+/* .section:nth-child(1) {
+  background: url("../assets/img/bg_unmasked.png");
+  background-size: cover;
+}
+
+.section:nth-child(2) {
+  background: url("../assets/img/bg_about.png");
+  background-size: cover;
+}
+
+.section:nth-child(3) {
+  background-image: url("../assets/img/bg_2.png");
+  background-size: cover;
+}
+
+.section:nth-child(4) {
+  background-image: url("../assets/img/bg_3.png");
+  background-size: cover;
+}
+
+.section:nth-child(5) {
+  background-image: url("../assets/img/bg-4.png");
+  background-size: cover;
+}
+
+.section:nth-child(6) {
+  background-image: url("../assets/svg/bg_KomplekGunungBeas.svg");
+  background-size: cover;
+} */
+
+.trans {
+  transition-delay: 1s;
+}
+
+.content {
+  transition: all 1s;
+  will-change: transform;
+  /* top: 0; */
+  width: 100%;
+  margin-top: 0;
+  /* position: absolute; */
+  height: 100vh;
+  z-index: -1;
+}
+
+.wrapper {
+  height: 100vh;
+}

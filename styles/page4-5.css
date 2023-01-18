@@ -1,0 +1,381 @@
+/* Page 4 and Page 5 */
+.bg-page45 {
+  /* The image used */
+  background-image: url("../assets/svg/bg_KomplekGunungBeas.svg");
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -2;
+}
+
+/* Turbin Animation */
+.turbinPosition1 {
+  top: 9.7%;
+  left: 12%;
+}
+
+.turbinPosition2 {
+  top: 16.7%;
+  left: 52%;
+}
+
+.wind-turbin {
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  max-height: 30px;
+  filter: blur(3px);
+  width: 10%;
+}
+
+.pole {
+  width: 0.1em;
+  margin: 0.067em 0.0167em;
+  border-bottom: 2.67em solid black;
+  border-right: 0.033em solid transparent;
+  border-left: 0.033em solid transparent;
+}
+
+.rotor {
+  width: 0.2em;
+  height: 0.2em;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: 1000;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.blade {
+  width: 1.067em;
+  height: 0.033em;
+  background-color: black;
+  position: absolute;
+  top: 0.067em;
+  left: 0.1em;
+  border-radius: 0 0.1em 0.167em 0;
+  transform-origin: 0 0.033em;
+}
+
+.blade:before {
+  content: "";
+  background-color: var(--color);
+  position: absolute;
+  width: 0.167em;
+  height: 0.067em;
+}
+
+.blade:after {
+  content: "";
+  width: 0.5em;
+  position: absolute;
+  top: 0.33em;
+  left: 0.067em;
+  border-top: 0.067em solid var(--color);
+  border-right: 0.073em solid transparent;
+  border-left: 0.2em solid transparent;
+}
+
+.blade1 {
+  transform: rotate(0deg);
+}
+
+.blade2 {
+  transform: rotate(120deg);
+}
+
+.blade3 {
+  transform: rotate(240deg);
+}
+
+/* Leaves Animation */
+.leaves {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  height: 100%;
+}
+
+.leaves .set {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.leaves .set div {
+  position: absolute;
+  display: block;
+}
+
+.leaves .set div:nth-child(1) {
+  left: 20%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s;
+}
+
+.leaves .set div:nth-child(2) {
+  left: 50%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+}
+
+.leaves .set div:nth-child(3) {
+  left: 70%;
+  animation: animate 20s linear infinite;
+  animation-delay: 0s;
+}
+
+.leaves .set div:nth-child(4) {
+  left: 0%;
+  animation: animate 15s linear infinite;
+  animation-delay: -5s;
+}
+
+.leaves .set div:nth-child(5) {
+  left: 85%;
+  animation: animate 18s linear infinite;
+  animation-delay: -10s;
+}
+
+.leaves .set div:nth-child(6) {
+  left: 0%;
+  animation: animate 12s linear infinite;
+}
+
+.leaves .set div:nth-child(7) {
+  left: 15%;
+  animation: animate 14s linear infinite;
+}
+
+.leaves .set div:nth-child(8) {
+  left: 60%;
+  animation: animate 15s linear infinite;
+  animation-delay: -10s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    top: -10%;
+    transform: translate(20px) rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(-20px) rotate(45deg);
+  }
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60% {
+    transform: translateX(20px) rotate(180deg);
+  }
+  80% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  100% {
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg);
+  }
+}
+
+.set2 {
+  transform: scale(2) rotateY(180deg);
+  filter: blur(2px);
+}
+
+.set3 {
+  transform: scale(0.8) rotateX(180deg);
+  filter: blur(2px);
+}
+
+.leftContent {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+}
+
+.rightContent {
+  position: relative;
+  z-index: 100;
+  width: 50%;
+  text-align: right;
+}
+
+.pop-up-map {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  transition: 0.7s;
+}
+
+.map {
+  width: 70%;
+  transition: 0.7s;
+}
+
+.map:hover {
+  /* width: 80%; */
+  transform: scale(1.1);
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 40px;
+  text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+.pop-up-map-page5 {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 110;
+  transition: 0.7s;
+}
+
+.pop-up-map span {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 6.5%;
+  left: 72%;
+  z-index: 100;
+  width: 43px;
+  height: 42px;
+  background: url("../assets/svg/CloseButton.svg");
+  background-size: contain;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  transition: 0.8s;
+}
+
+.pop-up-map span:hover {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 6.5%;
+  left: 72%;
+  z-index: 100;
+  width: 43px;
+  height: 42px;
+  background: url("../assets/svg/CloseButtonHover.svg");
+  background-size: contain;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  transition: 0.8s;
+}
+
+.pop-up-map-page5 span {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 11.5%;
+  left: 72%;
+  z-index: 100;
+  width: 43px;
+  height: 42px;
+  background: url("../assets/svg/CloseButton.svg");
+  background-size: contain;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  transition: 0.8s;
+}
+
+.pop-up-map-page5 span:hover {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 11.5%;
+  left: 72%;
+  z-index: 100;
+  width: 43px;
+  height: 42px;
+  background: url("../assets/svg/CloseButtonHover.svg");
+  background-size: contain;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  transition: 0.8s;
+}
+
+.pop-up-map img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  width: 50%;
+  object-fit: cover;
+  z-index: 90;
+  transition: 0.7s;
+}
+
+.pop-up-map-page5 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  width: 50%;
+  object-fit: cover;
+  z-index: 90;
+  transition: 0.7s;
+}
+
+.leftContentPage5 {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}

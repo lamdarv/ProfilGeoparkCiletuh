@@ -1,0 +1,142 @@
+/* MEMBERS */
+.top1 {
+  top: -50%;
+}
+
+.member-page {
+  background: url("/Assets/Main/bg_about.webp");
+}
+
+.memberspage-container {
+  background-size: cover;
+  height: 100vh;
+}
+
+.members-container {
+  width: 60%;
+  height: 45%;
+  right: 5%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.member-box {
+  height: 52%;
+
+  width: 32%;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5%;
+}
+
+.img-mem {
+  height: 100%;
+  bottom: 0;
+}
+
+.member-footer {
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+
+.nim {
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: lighter;
+}
+
+.name {
+  font-family: "Hind Guntur", sans-serif;
+}
+
+.members-text-box {
+  top: 25%;
+  left: 5%;
+  width: 20%;
+}
+
+.bg-aboutpage {
+  /* The image used */
+  background: url("../assets/img/bg_about.webp");
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.leftContentAboutPage {
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.rightContentAboutPage {
+  position: relative;
+  z-index: 100;
+  width: 80%;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.bg-page7 {
+  /* The image used */
+  background-image: url("../assets/img/bg_GuaLalay.webp");
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -2;
+}
+
+/* Responsive */
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .bg-aboutpage {
+    height: 200vh !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .bg-aboutpage {
+    height: 300vh !important;
+  }
+
+  .about .bg-aboutpage main {
+    height: 200%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .rightContentAboutPage {
+    position: relative;
+  }
+
+  .bg-page1 main {
+    /* height: 260vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: visible; */
+  }
+}
+
+/* @media screen and (max-width: 500px) {
+  .bg-aboutpage{
+    height: 300vh !important;
+  }
+} */

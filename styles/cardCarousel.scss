@@ -1,0 +1,74 @@
+/* Variables */
+
+$easing: cubic-bezier(1, 0.015, 0.295, 1.225);
+
+/* Cards Icon */
+
+.carousel {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 180px;
+  height: 160px;
+  transform: translate(-50%, -50%);
+  transform: scale(1.5);
+  perspective: 1000px;
+
+  /* This rotates with the animation */
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(-145px) rotateY(0);
+    animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225)
+      forwards;
+  }
+
+  /* Individual cards */
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 150px;
+    background: #ff257a;
+
+    opacity: 0.8;
+    border-radius: 6px;
+
+    @for $i from 1 to 6 {
+      &:nth-child(#{$i}) {
+        transform: rotateY($i * 72deg) translateZ(145px);
+      }
+    }
+  }
+}
+
+/* Animation */
+
+@keyframes carousel {
+  0%,
+  15% {
+    transform: translateZ(-145px) rotateY(0);
+  }
+  25%,
+  40% {
+    transform: translateZ(-145px) rotateY(-72deg);
+  }
+  50%,
+  65% {
+    transform: translateZ(-145px) rotateY(-144deg);
+  }
+  75%,
+  90% {
+    transform: translateZ(-145px) rotateY(-216deg);
+  }
+}
+
+.img-borderradius1 {
+  border-radius: 6px;
+  filter: drop-shadow(5px 4px 10px rgba(0, 0, 0, 0.25));
+}

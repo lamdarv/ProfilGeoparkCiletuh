@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Quicksand:wght@300&display=swap");
+
+* {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  /* overflow-y: scroll;
+  scroll-snap-type: y mandatory; */
+}
+
+/* section {
+  scroll-snap-align: start;
+} */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  margin: 0px 10px 0px 10px;
+  padding: 0px 20px 0px 20px;
+  max-height: 20vh;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  top: 10%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* REUSABLES */
+.marginPadding1 {
+  margin: 0px 10px 10px 10px;
+  padding: 0px 20px 20px 20px;
+}
+
+.margin1 {
+  margin: 0 40px 0 100px;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.blur4px {
+  filter: blur(4px);
+}
+
+.shadow1 {
+  filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.image-w30 {
+  width: 30%;
+}
+.image-w60 {
+  width: 60%;
+}
+
+.image-w90 {
+  width: 90%;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.overflow-hid {
+  overflow: hidden;
+}
+
+.txt-white {
+  color: white;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.trans-all-05s {
+  transition: all 0.5s;
+}
+
+.z-idx0 {
+  z-index: 0;
+}
+
+.z-idx1 {
+  z-index: 1;
+}
+
+.z-idx2 {
+  z-index: 2;
+}
+
+.z-idx3 {
+  z-index: 3000;
+}
+
+.just-con-center {
+  justify-content: center;
+}
+
+.alg-itm-center {
+  align-items: center;
+}
+
+.logoGeoparks {
+  width: 100px;
+  z-index: -1;
+}
+
+.logoOrganisasi {
+  width: 120px;
+}
+
+.logoExploreGeoparks {
+  width: 60%;
+}
+
+#text-shake {
+  top: 200px;
+}
+
+#ds-none {
+  display: none;
+}
+
+.ds-none {
+  display: none;
+}
+
+/* Eben */
+.text-black {
+  color: black;
+}
+.text-large {
+  font-size: 5rem;
+}
+.ms-10 {
+  margin-left: 10rem;
+}
+.ms-8 {
+  margin-left: 8rem;
+}
+.ms-5 {
+  margin-left: 5rem;
+}
+.mb-10 {
+  margin-bottom: 10em;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.bg-custom {
+  background-color: #764747;
+}
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-end-1 {
+  grid-row-end: 1;
+}
+
+.row-start-2 {
+  grid-row-start: 2;
+}
+
+.row-end-2 {
+  grid-row-end: 2;
+}
+
+.row-start-3 {
+  grid-row-start: 3;
+}
+
+.row-end-3 {
+  grid-row-end: 3;
+}
+
+.row-start-4 {
+  grid-row-start: 4;
+}
+
+.row-end-4 {
+  grid-row-end: 4;
+}
+
+.row-span-2 {
+  grid-row: span 2;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
+.col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+
+.col-end-1 {
+  grid-column-end: 1;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
+.col-start-4 {
+  grid-column-start: 4;
+}
+
+.col-end-4 {
+  grid-column-end: 4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-row-3 {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-row-4 {
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.grid-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-col-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

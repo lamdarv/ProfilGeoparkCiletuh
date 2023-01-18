@@ -1,0 +1,130 @@
+/* Page 7 */
+
+
+.pentagon-container {
+  width: 100%;
+  /* height: 70%; */
+}
+
+.conclusion-container {
+  height: 100vh;
+}
+
+.government {
+  width: 8%;
+  height: 11%;
+  top: 2%;
+  left: 45.5%;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+}
+
+.community {
+  width: 8%;
+  height: 11%;
+  top: 34%;
+  right: 34%;
+}
+
+.business {
+  width: 7%;
+  height: 11%;
+  top: 34%;
+  left: 34%;
+}
+
+.academics {
+  width: 7%;
+  height: 11%;
+  bottom: 3%;
+  left: 39%;
+}
+
+.media {
+  width: 7%;
+  height: 11%;
+  bottom: 3%;
+  right: 39%;
+}
+
+.img-pentagon {
+  width: 30%;
+}
+
+.gov-content {
+  width: 40%;
+  top: 8.1%;
+  right: 11.1%;
+  opacity: 0;
+}
+
+.government:hover + .gov-content {
+  opacity: 1;
+}
+
+.bus-content {
+  width: 29.5%;
+  top: 25.6%;
+  left: 9.9%;
+  opacity: 0;
+}
+
+.business:hover + .bus-content {
+  opacity: 1;
+}
+
+.com-content {
+  width: 30%;
+  top: 23.6%;
+  right: 10.35%;
+  opacity: 0;
+}
+
+.community:hover + .com-content {
+  opacity: 1;
+}
+
+.ac-content {
+  width: 32%;
+  bottom: 7.8%;
+  left: 11.3%;
+  opacity: 0;
+}
+
+.academics:hover + .ac-content {
+  opacity: 1;
+}
+
+.med-content {
+  width: 33.5%;
+  bottom: 7.8%;
+  right: 10.85%;
+  opacity: 0;
+}
+
+.conclusion {
+  width: 7%;
+  height: 7%;
+  left: 46%;
+  top: 53%;
+  opacity: 0;
+  transform: scale(2);
+}
+
+.conclusion-content {
+  top: 40%;
+  right: 10%;
+  width: 15%;
+  opacity: 0;
+}
+
+.conclusion:hover + .conclusion-content {
+  opacity: 1;
+}
+
+.media:hover + .med-content {
+  opacity: 1;
+}
+
+.img-pentagon:hover + .conclusion {
+  opacity: 1;
+}

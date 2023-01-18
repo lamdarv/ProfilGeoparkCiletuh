@@ -1,0 +1,16 @@
+<svg width="1584" height="347" viewBox="0 0 1584 347" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 171.5L620 171.5" stroke="white" stroke-width="5" stroke-dasharray="10 10"/>
+<circle cx="415" cy="172" r="10" fill="black"/>
+<circle cx="215" cy="172" r="10" fill="black"/>
+<circle cx="15" cy="172" r="10" fill="black"/>
+<path d="M15 0.566254L0.566243 15L15 29.4338L29.4338 15L15 0.566254ZM17.5 172L17.5 15H12.5L12.5 172H17.5Z" fill="black"/>
+<path d="M215 345.434L229.434 331L215 316.566L200.566 331L215 345.434ZM217.5 331V174H212.5V331H217.5Z" fill="black"/>
+<path d="M415 2.56625L400.566 17L415 31.4338L429.434 17L415 2.56625ZM417.5 174V17H412.5V174H417.5Z" fill="black"/>
+<path d="M964 174L1569 174" stroke="white" stroke-width="5" stroke-dasharray="10 10"/>
+<circle cx="1169" cy="176" r="10" fill="black"/>
+<circle cx="1369" cy="174" r="10" fill="black"/>
+<circle cx="1569" cy="176" r="10" fill="black"/>
+<path d="M1169 1.56625L1154.57 16L1169 30.4338L1183.43 16L1169 1.56625ZM1171.5 173V16H1166.5V173H1171.5Z" fill="black"/>
+<path d="M1369 346.434L1383.43 332L1369 317.566L1354.57 332L1369 346.434ZM1371.5 332V175H1366.5V332H1371.5Z" fill="black"/>
+<path d="M1569 3.56625L1554.57 18L1569 32.4338L1583.43 18L1569 3.56625ZM1571.5 175V18H1566.5V175H1571.5Z" fill="black"/>
+</svg>

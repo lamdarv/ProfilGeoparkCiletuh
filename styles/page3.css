@@ -1,0 +1,130 @@
+/* Page 3 */
+.bg-page3 {
+  /* The image used */
+  background-image: url("../assets/img/bg-4.webp");
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -2;
+}
+
+/* Mini Bubbles Animation */
+.box ul li {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  list-style: none;
+  opacity: 0;
+  background: radial-gradient(rgb(124, 127, 128), transparent, transparent);
+  bottom: 0;
+  left: 10vw;
+  animation: animateBubbles 15s linear infinite;
+}
+.box ul li:nth-child(2) {
+  left: 36vw;
+  animation-delay: 2s;
+}
+.box ul li:nth-child(3) {
+  left: 22vw;
+  animation-delay: 4s;
+}
+.box ul li:nth-child(4) {
+  left: 56vw;
+  animation-delay: 6s;
+}
+.box ul li:nth-child(5) {
+  left: 76vw;
+  animation-delay: 4s;
+}
+.box ul li:nth-child(6) {
+  left: 80vw;
+  animation-delay: 8s;
+}
+.box ul li:nth-child(7) {
+  left: 16vw;
+  animation-delay: 9s;
+}
+.box ul li:nth-child(8) {
+  left: 57vw;
+  animation-delay: 4s;
+}
+.box ul li:nth-child(9) {
+  left: 12vw;
+  animation-delay: 2s;
+}
+.box ul li:nth-child(10) {
+  left: 25vw;
+  animation-delay: 1s;
+}
+.box ul li:nth-child(11) {
+  left: 76vw;
+  animation-delay: 6s;
+}
+.box ul li:nth-child(12) {
+  left: 32vw;
+  animation-delay: 2s;
+}
+@keyframes animateBubbles {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0;
+    bottom: 100vh;
+  }
+}
+
+i:nth-child(5) {
+  top: 280px;
+  left: 12px;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(223, 175, 228, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  box-shadow: 0px 0px 5px 0px #2df1ff;
+  animation-duration: 5s;
+}
+
+i:nth-child(6) {
+  top: 550px;
+  left: 30px;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(170, 168, 164, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  box-shadow: 0px 0px 5px 0px #2df1ff;
+  animation-duration: 6s;
+}
+
+@keyframes screen {
+  from {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.3;
+    transform: scale3d(3, 3, 4);
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

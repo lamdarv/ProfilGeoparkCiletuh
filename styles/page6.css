@@ -1,0 +1,174 @@
+/* Page 6 */
+
+.bg-page6 {
+  /* The image used */
+  background-image: url("../assets/img/bg_Komplek\ Melange\ Gunung\ Badak.webp");
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.positionPage6 {
+  /* display: flex;
+    justify-content: center; */
+  z-index: 0;
+  height: 57vh;
+  margin: 0;
+  top: 20%;
+  position: relative;
+}
+
+.page6-content-container {
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  width: 90%;
+  height: 50%;
+}
+
+.page6-content {
+  width: 80%;
+}
+
+.melange-txt {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: light;
+  letter-spacing: 1px;
+}
+
+.melange-txt:hover {
+  font-weight: bold;
+  color: white;
+}
+
+.melange {
+  width: 17%;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.melange-foot {
+  width: 100%;
+  height: 25%;
+  bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: medium;
+  transition: all 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.melange:hover .melange-foot {
+  opacity: 1;
+}
+
+.komposisi {
+  top: 15.5%;
+  left: 12%;
+}
+
+.proses {
+  bottom: 16%;
+  left: 22%;
+}
+
+.cikepuh {
+  top: 15.5%;
+  left: 32%;
+}
+
+.umur {
+  top: 15.5%;
+  right: 32%;
+}
+
+.granit {
+  bottom: 16%;
+  right: 22%;
+}
+
+.erosi {
+  top: 15.5%;
+  right: 12%;
+}
+
+.popup-container {
+  width: 55%;
+  height: 90%;
+  transition: all 0.5s;
+}
+
+.popup-title {
+  top: 20%;
+  font-size: 30px;
+}
+
+.popup-text {
+  font-size: 15px;
+  top: 40%;
+}
+
+.popup-font {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-shadow: none;
+}
+
+.img-pop {
+  width: 100%;
+  height: 95%;
+}
+
+.close {
+  width: 5%;
+  top: 1%;
+  right: -1.5%;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+#komposisi-pop {
+  display: none;
+  transition: all 0.5s;
+  z-index: 0;
+  opacity: 0;
+  will-change: opacity;
+  transform: opacity;
+}
+
+#proses-pop {
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 0;
+}
+
+#cikepuh-pop {
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 0;
+}
+
+#umur-pop {
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 0;
+}
+
+#granit-pop {
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 0;
+}
+#erosi-pop {
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 0;
+}
